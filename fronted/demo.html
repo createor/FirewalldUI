@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/layui/css/layui.css">
+    <link rel="stylesheet" href="./static/index.css">
+    <!-- <script src="./static/jquery.js"></script> -->
+    <script src="./static/layui/layui.js"></script>
+</head>
+<body>
+    <div class="head"></div>
+    <div class="left-nav">
+        <div class="layui-tab" lay-filter="status">
+            <ul class="layui-tab-title">
+                <li class="layui-this">已建立连接</li>
+                <li>运行中服务</li>
+            </ul>
+        </div>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <ul class="query-status" style="width: 100%;height: auto;" id="established"></ul>
+            </div>
+            <div class="layui-tab-item">
+                <ul class="query-status" style="width: 100%;height: auto;" id="service"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-title"></div>
+        <div class="container">
+            <div class="layui-tab" lay-filter="menu">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">已有规则</li>
+                    <li>新增规则</li>
+                </ul>
+            </div>   
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <table id="exist-rule" lay-filter="existRule"></table>
+                </div>
+                <div class="layui-tab-item">内容2</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./static/index.js"></script>
+<script>
+    window.onload = function(){
+        initVar.init();
+    }
+</script>
+</html>

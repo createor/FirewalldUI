@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2080056",
+      "name": "防火墙",
+      "font_class": "fanghuoqiang",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    }
+  ]
+}
